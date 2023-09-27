@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --color-brand-1: hsl(278, 68%, 11%);
+  --color-brand-2: hsl(279, 6%, 55%);
+  --color-brand-3: hsl(0, 100%, 66%);
+  --color-brand-4: hsl(0, 0%, 100%);
+
+  --color-site-1: hsl(270, 3%, 87%);
+  --color-site-gr-1: hsl(249, 99%, 64%);
+  --color-site-gr-2: hsl(278, 94%, 30%);
+
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-space-grotesk);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.ThankComBox {
+  text-align: center;
+}
+
+.ThankComBox > img {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+.ThankComBox-Title {
+  font-size: 3rem;
+  color: var(--color-brand-1);
+  margin-bottom: 2rem;
+}
+
+.ThankComBox-Para {
+  font-size: 1.8rem;
+  color: var(--color-brand-2);
+  margin-bottom: 2rem;
+}
+
+.ThankComBox-Btn {
+  display: block;
+  margin: auto;
+  width: 80%;
+  border-radius: 0.5rem;
+  background-color: var(--color-brand-1);
+  color: var(--color-brand-4);
+  cursor: pointer;
+  padding: 1.25rem 2rem;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+}

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --color-brand-1: hsl(278, 68%, 11%);
+  --color-brand-2: hsl(279, 6%, 55%);
+  --color-brand-3: hsl(0, 100%, 66%);
+  --color-brand-4: hsl(0, 0%, 100%);
+
+  --color-site-1: hsl(270, 3%, 87%);
+  --color-site-gr-1: hsl(249, 99%, 64%);
+  --color-site-gr-2: hsl(278, 94%, 30%);
+
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-space-grotesk);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.CardsWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4rem;
+  justify-content: flex-start;
+  padding: 0 2rem;
+}
+
+.CardsWrapper-Back {
+  transform: translateX(20%);
+}
+
+.CardsWrapper-Front {
+  transform: translateY(-65.25%);
+  z-index: 10;
+}
+
+@media screen and (min-width: 800px) {
+  .CardsWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .CardsWrapper-Back {
+    transform: translateX(25%);
+  }
+
+  .CardsWrapper-Front {
+    transform: none;
+  }
+}

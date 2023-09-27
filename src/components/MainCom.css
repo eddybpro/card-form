@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --color-brand-1: hsl(278, 68%, 11%);
+  --color-brand-2: hsl(279, 6%, 55%);
+  --color-brand-3: hsl(0, 100%, 66%);
+  --color-brand-4: hsl(0, 0%, 100%);
+
+  --color-site-1: hsl(270, 3%, 87%);
+  --color-site-gr-1: hsl(249, 99%, 64%);
+  --color-site-gr-2: hsl(278, 94%, 30%);
+
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-space-grotesk);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.BackgroundBox {
+  background: url("../assets/bg-main-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+  margin-bottom: 8rem;
+}
+
+.BackgroundBox > div {
+  height: 100%;
+  transform: translateY(56%);
+}
+
+.FormBox {
+  display: grid;
+  place-content: center;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 32.5% 67.5%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .BackgroundBox {
+    height: 100%;
+    background: url("../assets/bg-main-desktop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+  }
+
+  .BackgroundBox > div {
+    height: 100%;
+    transform: none;
+    transform: translateX(20%);
+  }
+}

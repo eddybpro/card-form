@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --color-brand-1: hsl(278, 68%, 11%);
+  --color-brand-2: hsl(279, 6%, 55%);
+  --color-brand-3: hsl(0, 100%, 66%);
+  --color-brand-4: hsl(0, 0%, 100%);
+
+  --color-site-1: hsl(270, 3%, 87%);
+  --color-site-gr-1: hsl(249, 99%, 64%);
+  --color-site-gr-2: hsl(278, 94%, 30%);
+
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-space-grotesk);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.CardFront-ImgBox,
+.CardFront-ImgBox > img {
+  width: 90%;
+  height: 100%;
+}
+
+.CardFront-ImgBox {
+  position: relative;
+}
+
+.CardFront-ImgBox-Txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2rem;
+}
+
+.Logo {
+  width: 6rem;
+}
+
+.CardFront-ImgBox-Txt-CardNumber {
+  color: var(--color-brand-4);
+  font-size: 1.6rem;
+  margin-top: 8%;
+  margin-left: 1rem;
+  letter-spacing: 2px;
+}
+
+.CardFront-ImgBox-Txt-Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 0 3rem 0 1rem;
+}
+
+.CardFront-ImgBox-Txt-Container-UserName,
+.CardFront-ImgBox-Txt-Container-Date {
+  font-size: 1.6rem;
+  color: var(--color-brand-4);
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 800px) {
+  .CardFront-ImgBox,
+  .CardFront-ImgBox > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .CardFront-ImgBox-Txt {
+    padding: 2.5rem;
+  }
+
+  .Logo {
+    width: 8rem;
+  }
+
+  .CardFront-ImgBox-Txt-CardNumber {
+    font-size: 2.6rem;
+    margin-top: 15%;
+  }
+
+  .CardFront-ImgBox-Txt-Container {
+    padding: 0 6rem 0 1rem;
+  }
+
+  .CardFront-ImgBox-Txt-Container-UserName,
+  .CardFront-ImgBox-Txt-Container-Date {
+    font-size: 1.8rem;
+  }
+}

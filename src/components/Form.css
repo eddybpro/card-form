@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --color-brand-1: hsl(278, 68%, 11%);
+  --color-brand-2: hsl(279, 6%, 55%);
+  --color-brand-3: hsl(0, 100%, 66%);
+  --color-brand-4: hsl(0, 0%, 100%);
+
+  --color-site-1: hsl(270, 3%, 87%);
+  --color-site-gr-1: hsl(249, 99%, 64%);
+  --color-site-gr-2: hsl(278, 94%, 30%);
+
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-space-grotesk);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+form {
+  width: 35rem;
+}
+
+label {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--color-brand-1);
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+label.error > input {
+  border-color: var(--color-brand-3);
+}
+
+input {
+  display: block;
+  margin-top: 0.5rem;
+  width: 100%;
+  border: 2px solid var(--color-site-1);
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 1.25rem 2rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+
+input::placeholder {
+  color: var(--color-brand-2);
+}
+
+input:focus {
+  background-image: linear-gradient(90deg, white, white),
+    linear-gradient(90deg, var(--color-site-gr-1), var(--color-site-gr-2));
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+}
+
+.FormError {
+  color: var(--color-brand-3);
+  text-transform: lowercase;
+  position: absolute;
+  bottom: -2.5rem;
+  left: 1rem;
+}
+
+.FormError::first-letter {
+  text-transform: uppercase;
+}
+
+.Date-Month-cvcBox {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.Date-Month-cvcBox > label > input {
+  width: 14rem;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: fit-content;
+  outline: none;
+  border: none;
+  position: relative;
+}
+
+fieldset .FormError {
+  bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+fieldset .FormError::first-letter {
+  text-transform: uppercase;
+}
+
+fieldset > legend {
+  font-size: 1.8rem;
+  color: var(--color-brand-1);
+  text-transform: uppercase;
+}
+
+fieldset input {
+  width: 8rem;
+}
+
+fieldset > label > input::placeholder {
+  text-transform: uppercase;
+}
+
+.FormBtn {
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.25rem 2rem;
+  font-size: 1.6rem;
+  color: var(--color-brand-4);
+  background-color: var(--color-brand-1);
+  margin: 1rem auto 0;
+  border-radius: 0.5rem;
+  width: 100%;
+}
